@@ -6,7 +6,7 @@ const generateBtn = document.querySelector('.generate');
 window.addEventListener('DOMContentLoaded', function () {
     setTimeout(function () {
         renderForm();
-    }, 3000);
+    }, 2000);
 
     form.addEventListener('submit', function (e) {
         e.preventDefault()
@@ -59,7 +59,7 @@ function download(){
         let width = canvas.width;
         let height = canvas.height;
 
-        document.body.appendChild(canvas);
+        document.querySelector('.display').appendChild(canvas);
         let img = Canvas2Image.convertToImage(canvas, width, height);
         let w = width;
         let h = height;

@@ -19,7 +19,7 @@ body {
 .card {
     box-shadow: 0 0 32px 4px rgba(0, 0, 0, 0.2);
     font-family: 'Verdena';
-    min-width: 300px;
+    min-width: 250px;
     max-width: 95vw;
     min-height: 100vh;
     max-height: 500px;
@@ -27,6 +27,13 @@ body {
    flex-direction: column;
     position: relative;
     display: none;
+}
+.display {
+    box-shadow: 0 0 32px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Verdena';
+    position: absolute;
+    top: 10%;
+    left: 20%;  
 }
 header{
     background-color: green;
