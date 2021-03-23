@@ -50,6 +50,9 @@ function generateCard() {
          document.querySelector('.status').innerHTML = status;
     } else {
         alert('Please fill in required field');
+        setTimeout(function () {
+            location.href = 'index.html'
+        },1)
     }
 
 }
