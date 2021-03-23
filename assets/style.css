@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.card {
+    box-shadow: 0 0 32px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Verdena';
+    min-width: 300px;
+    max-width: 95vw;
+    min-height: 100vh;
+    max-height: 500px;
+   display: flex;
+   flex-direction: column;
+    position: relative;
+    display: none;
+}
+header{
+    background-color: green;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 50px;
+    
+}
+.generate{
+    position: absolute;
+    bottom: 100px;
+    display: none;
+}
+.description{
+    text-align: left;
+    font-family: 'serif';
+    font-size: 15px;
+    line-height:18px;
+    word-spacing: 1px;
+}
+section{
+    height: 50px;
+    background-color: rgb(194, 183, 183);
+    padding: 5px;
+}
+
+main{
+    box-shadow: 0 0 32px 4px rgba(0, 0, 0, 0.2);
+    height: 250px;
+   
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+.accepted{
+    color: rgb(184, 235, 83) !important;
+}
+.status{
+    width: 200px;
+    color: rgb(20, 19, 19);
+    font-weight: bold;
+    background: white;
+    text-transform: capitalize;
+}
+
+.course_title{
+    color: rgb(88, 87, 87);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.second strong{
+    text-align: center;
+    font-weight: 700;
+    font-size: .7rem;
+    padding: 3px;
+    text-transform: uppercase;
+    width: 95%;
+}
+.third{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    outline: none;
+    border: 1px solid rgb(199, 189, 189);
+    padding: 2px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.second i{
+    font-size: 3rem;
+    color: rgb(192, 187, 187);
+}
+.show{
+    display: block !important;
+}
+.hide{
+    display: none !important;
+}
+.form{
+    position: absolute;
+    top: 50px;
+    left: 35%;
+    box-shadow: 0 0 32px 4px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+.toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.rotate {
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+canvas {
+    flex: 2;
+    width: 95%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgContainer {
+    flex: 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+}
+
+.imgContainer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    border: 5px solid yellowgreen;
+    background-color: blue;
+    box-shadow: 0 0 32px 4px rgba(0, 0, 0, 0.2);
+}
+
+.imgContainer div img {
+    display: inline-block;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.playlist {
+    flex: 1;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.5) 0%, rgba(55, 55, 55, 0.6));
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist div {
+    padding: 0.75rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+
+.playlist div a {
+    padding: 0.75rem 0;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.playlist div a:nth-child(1) {
+    /* width: 10%; */
+    padding: 5px;
+    background-color: none !important;
+}
+
+.playlist div a:nth-child(2) {
+    width: 90%;
+}
+
+.playlist div a:not(.editBtn):hover {
+    background: white;
+    color: black;
+}
+
+.playlist div a i {
+    font-size: .75rem;
+    margin-right: .5rem;
+}

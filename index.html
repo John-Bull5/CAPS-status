@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPS admission status generator</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="card">
+        <header>
+            <div>
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </div>
+            <div>
+                <h5 id="header_info"></h5>
+            </div>
+            <div>
+                <i class="fa fa-redo" aria-hidden="true"></i>
+            </div>
+        </header>
+        <section class="description">
+            <p class="desc_text"></p>
+        </section>
+        <main>
+            <div class="first pt-2 pr-1">
+                <button style="float: right;">First Choice</button>
+            </div>
+            <div class="second mt-3">
+                <i class="fa fa-university" aria-hidden="true"></i>
+                <strong class="school_name">
+                    <!-- school name -->
+                </strong>
+                <h4 class="course_title">
+                    <!-- course title -->
+                </h4>
+            </div>
+             <div class="third mt-3">
+            <button class="status">
+                <!-- status -->
+            </button>
+        </div>
+        </main>
+       
+    </div>
+    <div class="form p-5">
+                <form method="POST">
+           <div class="form-group">
+               <label for="School">Enter School Name in Full</label>
+                <input type="text" id="school" class="form-control" value="NNAMDI AZIKIWE UNIVERSITY,AWKA,ANAMBRA STATE">
+           </div>
+           <div class="form-group">
+               <label for="course">Enter Your Course in full</label>
+                <input type="text" id="course" class="form-control">
+           </div>
+           <div class="form-group">
+               <label for="status"></label>
+                <select name="status" id="status" class="form-control">
+                    <option value="">Select Your Desired Status</option>
+                    <option value="Not Admitted">Not Admitted</option>
+                    <option value="Admission Accepted">Admission Accepted</option>
+                    <option value="Admission in Progress">Admission in Progress</option>
+                </select>
+           </div>
+           <div class="form-group">
+             <button type="submit" class="btn submitBtn btn-primary">Submit</button>
+           </div>
+        </form>
+
+    </div>
+
+    <button type="button" class="btn btn-primary generate">Generate</button>
+
+    <script src="assets/index.js"></script>
+</body>
+</html>
