@@ -18,6 +18,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
     generateBtn.addEventListener('click', function () {
         download();
+        generateBtn.classList.add('hide');
+        //card.classList.add('hide');
     })
 });
 
@@ -52,14 +54,23 @@ function generateCard() {
 
 }
 
-const download = () => {
+function download(){
     html2canvas(card).then(canvas => {
+        let width = canvas.width;
+        let height = canvas.height;
+
         document.body.appendChild(canvas);
-        let img = canvas.toDataURL('image/png');
-        document.write('<img src="' + img + '"/>');
-        let link = document.createElement('a');
-        link.download = 'admission.png';
-        link.href = canvas.toDataURL();
-        link.click();
+        let img = Canvas2Image.convertToImage(canvas, width, height);
+        let w = width;
+        let h = height;
+        let f = 'files';
+        let type = 'png';
+        Canvas2Image.saveAsImage(canvas, w, h, type, f);
+        card.classList.add('hide')
+        // document.write('<img src="' + img + '"/>');
+        // let link = document.createElement('a');
+        // link.download = 'admission.png';
+        // link.href = canvas.toDataURL();
+        // link.click();
     })
 }
