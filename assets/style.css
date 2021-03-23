@@ -19,14 +19,40 @@ body {
 .card {
     box-shadow: 0 0 32px 4px rgba(0, 0, 0, 0.2);
     font-family: 'Verdena';
-    min-width: 250px;
-    max-width: 95vw;
-    min-height: 100vh;
-    max-height: 500px;
-   display: flex;
-   flex-direction: column;
+    max-width: 420px;
+    height: 70%;
     position: relative;
     display: none;
+}
+.about_card {
+    box-shadow: 0 0 32px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Verdena';
+    width:400px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+.connect{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.connect li{
+    padding: 10px;
+}
+.about_card .img{
+    border: 3px solid greenyellow;
+    border-radius: 50%;
+}
+.me{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 .display {
     box-shadow: 0 0 32px 4px rgba(0, 0, 0, 0.2);
@@ -34,6 +60,7 @@ body {
     position: absolute;
     top: 10%;
     left: 20%;  
+    display: none;
 }
 header{
     background-color: green;
@@ -126,7 +153,6 @@ button{
 .form{
     position: absolute;
     top: 50px;
-    left: 35%;
     box-shadow: 0 0 32px 4px rgba(0, 0, 0, 0.2);
     display: none;
 }

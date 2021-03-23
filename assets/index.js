@@ -70,10 +70,6 @@ function download(){
         let type = 'png';
         Canvas2Image.saveAsImage(canvas, w, h, type, f);
         card.classList.add('hide')
-        // document.write('<img src="' + img + '"/>');
-        // let link = document.createElement('a');
-        // link.download = 'admission.png';
-        // link.href = canvas.toDataURL();
-        // link.click();
+        location.href = 'about.html';
     })
 }
